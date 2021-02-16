@@ -15,17 +15,19 @@
         crossorigin="anonymous" />
 </head>
 <body>
-    <section class="hero" id="hero">
-        <h1>HELLO</h1>
-    </section>
-    <section class="news" id="news"></section>
-    <section class="information" id="information"></section>
-    <section class="activity" id="activity"></section>
-    <section class="pictures"></section>
-    <section class="contact" id="contact"></section>
-    <section class="oceanShiga" id="oceanShiga"></section>
-    <section class="p-footer"></section>
-
+    <main id="fullpage">
+        <section class="hero section" id="hero">
+        
+        </section>
+        <section class="news" id="news"></section>
+        <section class="information" id="information"></section>
+        <section class="activity" id="activity"></section>
+        <section class="pictures"></section>
+        <section class="contact" id="contact"></section>
+        <section class="oceanShiga" id="oceanShiga"></section>
+        <section class="p-footer"></section>
+    
+    </main>
     <!-- MAIN JS-->
     <script type="text/javascript" src="public/js/all.js"></script>
     <!-- fullpage js-->
@@ -42,16 +44,16 @@
         integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ=="
         crossorigin="anonymous"></script>
     <script>
-        // new fullpage('#fullpage', {
-        //     autoscrolling: true,
-        //     scrollBar: true,
-        //     anchors: ['terrace01', 'story', 'information', 'precaution', 'terrace02'],
-        //     css3: true,
-        //     scrollingSpeed: 1000,
-        //     normalScrollElements: '.info,.precaution,.p-footer',
-        //     fitToSection: true,
-        //     dragAndMove: true,
-        // })
+        new fullpage('#fullpage', {
+            autoscrolling: true,
+            scrollBar: true,
+            anchors: ['terrace01', 'story', 'information', 'precaution', 'terrace02'],
+            css3: true,
+            scrollingSpeed: 1000,
+            normalScrollElements: '.info,.precaution,.p-footer',
+            fitToSection: true,
+            dragAndMove: true,
+        })
     </script>
 
 </body>
