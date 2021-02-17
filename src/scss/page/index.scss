@@ -7,7 +7,30 @@
     HERO SECTION
 ====================================
 ***/
-.hero{}
+.hero{
+    background:url(../../../public/img/common/bg_hero.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center bottom;
+    position:relative;
+    height:100vh;
+    &__top{
+        text-align:center;
+        margin-bottom:170px;
+    }
+    &__bottom{}
+
+    .philosophy{
+        text-align:center;
+        p{
+            color:$colortext01;
+        }
+
+        &__top{
+            margin-bottom:45px;
+        }
+    }
+}
 
 /***
 ====================================
@@ -15,9 +38,10 @@
 ====================================
 ***/
 .news{
-    background-image: url(../../../public/img/common/bg-news.png);
+    background-image: url(../../../public/img/common/bg_news.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     &__container{
         &--top{
             display: flex;
@@ -66,7 +90,43 @@
     INFORMATION SECTION
 ====================================
 ***/
-.information{}
+.information{
+    height:100vh;
+    &__top{
+        text-align:center;
+        margin-bottom:64.6px;
+    }
+    &__subtitle{
+        p{
+            font-family:$font-family;
+        }
+    }
+    &__desc{
+        margin-bottom:93.5px;
+    }
+
+
+    .members{
+        p{font-family: $font-family;}
+        &__left{
+            margin-right:53px;
+        }
+    }
+    .group{
+        align-items: center;
+        &__left{
+            p{
+                color:$colortext-secondary;
+            }
+            width:88px;
+        }
+        &__right{
+            p{
+                @include font-line(20);
+            }
+        }
+    }
+}
 
 /***
 ====================================
@@ -74,9 +134,10 @@
 ====================================
 ***/
 .activity{
-    background-image: url(../../../public/img/common/bg-activity.png);
+    background-image: url(../../../public/img/common/bg_activity.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     &__container{
         &--top{
             display: flex;
@@ -176,14 +237,73 @@
     CONTACT SECTION
 ====================================
 ***/
-.contact{}
+.contact{
+    height: 100vh;
+    &__inner{
+        text-align:center;
+    }
+    &__top{
+        margin-bottom:70.3px;
+    }
+    &__subtitle{
+        p{
+            font-family:$font-family;
+        }
+    }
+
+
+    &__number{
+        a{
+            @include font-line(47);
+            font-weight:700;
+            &:before{
+                content:url(../../../public/img/common/contact_number.svg);
+                margin-right:12.5px;
+            }
+        }
+        margin-bottom:35px;
+    }
+    &__mail{
+        a{
+            @include font-line(25);
+            font-weight:700;
+            &:before{
+                content:url(../../../public/img/common/contact_mail.svg);
+                margin-right:21.2px;
+            }
+        }
+        margin-bottom:48.6px;
+    }
+    &__desc{
+        margin-bottom:90px;
+        font-family: $font-family;
+    }
+}
+
 
 /***
 ====================================
     OCEAN SHIGA SECTION
 ====================================
 ***/
-.oceanShiga{}
-
+.oceanShiga{
+    background-color:$colortext-primary;
+    text-align:center;
+    &__inner{
+        padding:80.3px 0 84.3px 0;
+    }
+    &__top{
+        margin-bottom:42.7px;
+    }
+    .shiga{
+        font-family: $font-family;
+        &:after{
+            content:url(../../../public/img/common/shiga_click.svg);
+        }
+    }
+    p,a{
+        color:$colortext01;
+    }
+}
 
 
