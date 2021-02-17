@@ -1,0 +1,48 @@
+.p-footer{
+    background-color:#EFEFEF;
+    &__inner{
+        padding:70px 0;
+        p{
+            font-family: $font-family;
+        }
+    }
+    &__left,
+    &__right{
+        width:calc(100%/2);
+    }
+
+    &__left{
+        align-items: center;
+    }
+
+    .info{
+        &__desc{
+            // @include font-line(12);
+        }
+        &__hr{
+            background-color:#B7B7AD;
+        }
+
+    }
+
+    .navigation{
+        &__ul{}
+        &__li{
+            
+            border-right:1px solid #000;
+            p{
+                // @include font-line(12);
+            }
+        }
+    }
+
+    .copyright{
+        text-align:center;
+        background-color:$colortext-secondary;
+        p,a{
+            color:$colortext01;
+            @include font-line(14);
+        }
+        padding:18.2px 0 16.2px 0;
+    }
+}
