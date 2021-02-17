@@ -230,7 +230,67 @@
     PICTURES SECTION
 ====================================
 ***/
-.pictures{}
+.pictures{
+    &__container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        @include is-sp{
+            flex-direction: column;
+        }
+        @include is-tablet{
+            flex-direction: column;
+        }
+        &--image1{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            @include is-tablet{
+                width: 100%;
+            }
+            @include is-sp{
+                width: 100%;
+            }
+        }
+        &--image2{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            @include is-tablet{
+                width: 100%;
+            }
+            @include is-sp{
+                width: 100%;
+            }
+        }
+        &--image3{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            @include is-tablet{
+                width: 100%;
+            }
+            @include is-sp{
+                width: 100%;
+            }
+        }
+        &--image4{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            @include is-tablet{
+                width: 100%;
+            }
+            @include is-sp{
+                width: 100%;
+            }
+        }
+    }
+}
 
 /***
 ====================================
