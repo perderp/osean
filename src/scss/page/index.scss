@@ -1,5 +1,7 @@
 @charset "UTF-8";
-@import "../core/**/*";
+@import "../core/mixins";
+@import "../core/variables";
+
 
 
 /***
@@ -243,7 +245,8 @@
         text-align:center;
     }
     &__top{
-        margin-bottom:70.3px;
+        margin:93.8px 0 70.3px 0;
+        // margin-bottom:70.3px;
     }
     &__subtitle{
         p{
