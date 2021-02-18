@@ -21,18 +21,24 @@
         }
         &__hr{
             background-color:#B7B7AD;
+            margin:33.1px 0 23.9px 0;
         }
-
+        
     }
 
     .navigation{
         &__ul{}
-        &__li{
-            
-            border-right:1px solid #000;
-            p{
-                // @include font-line(12);
-            }
+        &__li{}
+        &__li:nth-child(1){
+            padding-right:18.2px;
+        }
+        &__li:nth-child(2){
+            border-left:1px solid $colortext-primary;
+            border-right:1px solid $colortext-primary;
+            padding:0 18.4px 0 18.4px;
+        }
+        &__li:nth-child(3){
+            padding-left:18.2px;
         }
     }
 
