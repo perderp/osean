@@ -180,6 +180,9 @@
                     }
                     
                 }
+                .txt-right{
+                    text-align: right;
+                }
                 .font38{
                     color: $colortext-secondary;
                     padding-right: 50px;
@@ -187,9 +190,6 @@
                     @include is-sp{
                         padding-right: 35px;
                     }
-                }
-                .padd20{
-                    padding-left: 20px;
                 }
                 .padd30{
                     padding-right: 30px;
