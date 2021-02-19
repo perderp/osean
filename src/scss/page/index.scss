@@ -26,6 +26,9 @@
         text-align:center;
         p{
             color:$colortext01;
+            @include is-tablet{
+                @include font-line(14);
+            }
         }
 
         &__top{
@@ -97,36 +100,78 @@
     &__top{
         text-align:center;
         margin-bottom:64.6px;
+        @include is-tablet02{
+            margin-bottom:54.4px;
+        }
     }
     &__subtitle{
         p{
             font-family:$font-family;
+            @include is-tablet02{
+                @include font-line(14);
+            }
+            @include is-sp{
+                @include font-line(14);
+            }
         }
     }
     &__desc{
         margin-bottom:93.5px;
+        @include is-tablet02{
+            @include font-line(14);
+            margin-bottom:54.4px;
+        }
     }
 
 
     .members{
+        display: flex;
+        justify-content: center;
+        &__inner{
+            display:flex;
+            @include is-tablet02{
+                display:block;
+            }
+            @include is-sp{
+                display:block;
+            }
+        }
         p{font-family: $font-family;}
         &__left{
             margin-right:53px;
         }
+
     }
     .group{
         align-items: center;
+        padding-top:17.6px;
         &__left{
             p{
                 color:$colortext-secondary;
+                @include is-tablet02{
+                    @include font-line(14);
+                }
+                @include is-sp{
+                    @include font-line(14);
+                }
             }
             width:88px;
         }
         &__right{
             p{
                 @include font-line(20);
+                @include is-tablet{
+                    @include font-line(18);
+                }
+                @include is-tablet02{
+                    @include font-line(16);
+                }
+                @include is-sp{
+                    @include font-line(16);
+                }
             }
         }
+
     }
 }
 
@@ -233,65 +278,28 @@
 ====================================
 ***/
 .pictures{
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+
     &__container{
         width: 100%;
+        height: 100vh;
         display: flex;
         flex-wrap: wrap;
-        @include is-sp{
-            flex-direction: column;
-        }
         @include is-tablet{
             flex-direction: column;
         }
-        &--image1{
-            width: 50%;
-            img{
-                width: 100%;
-            }
+        .images{
+            width: 50vw;
+            height: 50vh;
+            object-fit: cover;
             @include is-tablet{
-                width: 100%;
+                width: 100vw;
+                height: 25vh;
             }
             @include is-sp{
-                width: 100%;
-            }
-        }
-        &--image2{
-            width: 50%;
-            img{
-                width: 100%;
-            }
-            @include is-tablet{
-                width: 100%;
-            }
-            @include is-sp{
-                width: 100%;
-            }
-        }
-        &--image3{
-            width: 50%;
-            img{
-                width: 100%;
-            }
-            @include is-tablet{
-                width: 100%;
-            }
-            @include is-sp{
-                width: 100%;
-            }
-        }
-        &--image4{
-            width: 50%;
-            img{
-                width: 100%;
-            }
-            @include is-tablet{
-                width: 100%;
-            }
-            @include is-sp{
-                width: 100%;
+                width: 100vw;
+                height: 25vh;
             }
         }
     }
@@ -314,6 +322,12 @@
     &__subtitle{
         p{
             font-family:$font-family;
+            @include is-tablet02{
+                @include font-line(14);
+            }
+            @include is-sp{
+                @include font-line(14);
+            }
         }
     }
 
@@ -321,6 +335,12 @@
     &__number{
         a{
             @include font-line(47);
+            @include is-tablet{
+                @include font-line(30);
+            }
+            @include is-sp{
+                @include font-line(30);
+            }
             font-weight:700;
             &:before{
                 content:url(../../../public/img/common/contact_number.svg);
@@ -332,6 +352,12 @@
     &__mail{
         a{
             @include font-line(25);
+            @include is-tablet{
+                @include font-line(18);
+            }
+            @include is-sp{
+                @include font-line(16);
+            }
             font-weight:700;
             &:before{
                 content:url(../../../public/img/common/contact_mail.svg);
@@ -343,6 +369,9 @@
     &__desc{
         margin-bottom:90px;
         font-family: $font-family;
+        @include is-tablet{
+            @include font-line(14);
+        }
     }
 }
 
