@@ -61,7 +61,9 @@
             </ul>
         </nav>
     </header>
-    <a href="#" class="scroll scroll--white scroll-w u-d-n-sp u-d-n-tablet u-d-n-sp u-d-n-sp">scroll</a>
+    <a href="#" class="scroll scroll--white u-d-n-sp u-d-n-tablet">scroll
+        <div class="ah"></div>
+    </a>
     <main id="fullpage">
         <section class="hero section" data-anchor="hero">
             <div class="l-wrap02">
@@ -381,8 +383,7 @@
             </div>
         </section>
     </main>
-    <!-- MAIN JS-->
-    <script type="text/javascript" src="public/js/all.js"></script>
+
     <!-- fullpage js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/easings.min.js"
         integrity="sha512-SrKslwu6IjHEo/8mAOtkoUOT3MzHCEOFWktrC8BNtjPuBBYLYjg1y/Marat34uYfOfxDMLEwy8DLArWEVc2i+w=="
@@ -390,12 +391,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
         integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"
-        integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"
-        integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ=="
-        crossorigin="anonymous"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+
+    <!-- MAIN JS-->
+    <script type="text/javascript" src="public/js/all.js"></script>
 
     <script>
         new fullpage('#fullpage', {
@@ -406,7 +407,62 @@
             css3: true,
             scrollingSpeed: 1000,
             fitToSection: true,
-        })
+            dragAndMove: true,
+            afterLoad:(origin,destination,direction) =>{
+                
+            },
+            onLeave:(origin,destination,direction)=>{
+                const section = destination.item;
+                const philosophy = document.querySelector('.philosophy');
+                const navigation_a = document.querySelectorAll('.l-navigation__links > a');
+                const navigation_links = document.querySelectorAll('.l-navigation__links ');
+                const scrollLine = document.querySelector('.ah');
+                const scroll = document.querySelector('.scroll');
+                
+
+
+                if(destination.index){
+                    philosophy.classList.remove('fadeIn');
+
+                }else{
+                    philosophy.classList.add('fadeIn');
+                    
+                }
+
+                if(destination.index === 1  || destination.index === 2 || destination.index === 3 ){
+                    navigation_a[0].style.color="#000";
+                    navigation_a[1].style.color="#000";
+                    navigation_a[2].style.color="#000";
+                    navigation_a[3].style.color="#000";
+                    navigation_a[4].style.color="#000";
+
+                    navigation_links[0].style.borderBottom = "2px solid #000";
+                    navigation_links[1].style.borderBottom = "2px solid #000";
+                    navigation_links[2].style.borderBottom = "2px solid #000";
+                    navigation_links[3].style.borderBottom = "2px solid #000";
+
+                    scrollLine.style.backgroundColor="#000";
+                    scroll.style.color="#000";
+                    
+                }else{
+                    navigation_a[0].style.color="#FFF";
+                    navigation_a[1].style.color="#FFF";
+                    navigation_a[2].style.color="#FFF";
+                    navigation_a[3].style.color="#FFF";
+                    navigation_a[4].style.color="#FFF";
+
+                    navigation_links[0].style.borderBottom = "2px solid #FFF";
+                    navigation_links[1].style.borderBottom = "2px solid #FFF";
+                    navigation_links[2].style.borderBottom = "2px solid #FFF";
+                    navigation_links[3].style.borderBottom = "2px solid #FFF";
+
+                    scrollLine.style.backgroundColor="#FFF";
+                    scroll.style.color="#FFF";
+                }
+                
+                
+            },
+        });
         $(window).resize(function () {
             var container_width = $('.fb-frame').width();
             $('.fb-frame').html(
