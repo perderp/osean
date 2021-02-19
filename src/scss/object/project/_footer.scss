@@ -2,6 +2,13 @@
     background-color:#EFEFEF;
     &__inner{
         padding:70px 0;
+        display:flex;
+        @include is-tablet02{
+            display:block;
+        }
+        @include is-sp{
+            display:block;
+        }
         p{
             font-family: $font-family;
         }
@@ -9,25 +16,58 @@
     &__left,
     &__right{
         width:calc(100%/2);
+        @include is-tablet02{
+            width:100%;
+        }
+        @include is-sp{
+            width:100%;
+        }
     }
 
     &__left{
         align-items: center;
+        justify-content:center;
+
+        @include is-tablet02{
+            margin-bottom:38.2px;
+        }
+        @include is-sp{
+            margin-bottom:38.2px;
+        }
     }
 
     .info{
+        @include is-tablet02{
+            text-align: center;
+        }
+        @include is-sp{
+            text-align: center;
+        }
+
+        &__title{
+            font-weight:700;
+        }
         &__desc{
             // @include font-line(12);
         }
         &__hr{
             background-color:#B7B7AD;
-            margin:33.1px 0 23.9px 0;
+            margin:33.1px auto 23.9px auto;
+
+            @include is-tablet02{
+                width:80%;
+            }
+            @include is-sp{
+                width:80%;
+            }
         }
         
     }
 
     .navigation{
-        &__ul{}
+        &__ul{
+            justify-content:center;
+        }
         &__li{}
         &__li:nth-child(1){
             padding-right:18.2px;
@@ -39,6 +79,14 @@
         }
         &__li:nth-child(3){
             padding-left:18.2px;
+        }
+    }
+    .shigaLink{
+        @include is-tablet02{
+            text-align: center;
+        }
+        @include is-sp{
+            text-align: center;
         }
     }
 
