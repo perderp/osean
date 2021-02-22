@@ -35,27 +35,27 @@
             <ul class="l-navigation">
                 <li class="l-navigation__links">
                     <a href="#hero">
-                        Top
+                        <img src="public/img/navigation/nav_wtop.png" alt="" id="nav_top">
                     </a>
                 </li>
                 <li class="l-navigation__links">
                     <a href="#news">
-                        Latest news
+                        <img src="public/img/navigation/nav_wnews.png" alt="" id="nav_news">
                     </a>
                 </li>
                 <li class="l-navigation__links">
                     <a href="#information">
-                        Information
+                        <img src="public/img/navigation/nav_winformation.png" alt="" id="nav_info">
                     </a>
                 </li>
                 <li class="l-navigation__links">
                     <a href="#activity">
-                        Our activity
+                        <img src="public/img/navigation/nav_wactivity.png" alt="" id="nav_activity">
                     </a>
                 </li>
                 <li class="l-navigation__links">
                     <a href="#contact">
-                        Contact
+                       <img src="public/img/navigation/nav_wcontact.png" alt="" id="nav_contact">
                     </a>
                 </li>
             </ul>
@@ -65,7 +65,7 @@
         <div class="ah"></div>
     </a>
     <main id="fullpage">
-        <section class="hero section" data-anchor="hero">
+        <section class="hero section fp-auto-height-responsive" data-anchor="hero">
             <div class="l-wrap02">
                 <div class="l-container hero__inner">
                     <div class="hero__top">
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="news section"  data-anchor="news">
+        <section class="news section fp-auto-height-responsive"  data-anchor="news">
             <div class="news__container">
                 <div class="news__container--top">
                     <img src="./public/img/common/ttl_news.svg" alt="">
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="information section"  data-anchor="information">
+        <section class="information section fp-auto-height-responsive"  data-anchor="information">
             <div class="l-wrap">
                 <div class="l-container information__inner">
                     <div class="information__top">
@@ -124,9 +124,9 @@
                     <div class="information__bottom">
                         <div class="information__desc">
                             <p>初めまして、オセアンJBoy's大津で監督をしている「田中一輝」です。
-                                夢を持ち、ひたむきに努力する子どもたちとともに、今まで私が野球人生で得たことを少しでも多く子どもたちに伝え、「気づき」を与えられるような指導に取り組みたいと思います。
+                                夢を持ち、ひたむきに努力する子どもたちとともに、今まで私が野球人生で得たことを少しでも多く<br>子どもたちに伝え、「気づき」を与えられるような指導に取り組みたいと思います。<br>
                                 子どもたちが中学校・高校・社会人となっても野球が続けられるように、基本を身につけ、レベルの高い野球に常に挑戦できる子どもたちを育成したいと考えております。言われることをこなすだけではなく、そこにどんな意味があるのか？何に繋がるのか？をまず考え、意識して行動に繋げられる人間に成長してほしい。同時に結果だけではなく、結果までの過程に大きな意味があることを頭に置き、考え、我慢し、多くの「気づき」を得ながら結果に繋がるよう意識を高く持ち、努力してほしいと思っています。
-                                最後になりますが、野球をする以前に人として重要になる、礼儀、目配り、気配りを中学生のうちに身につけられるよう成長して欲しいと考えます。
+                                最後になりますが、野球をする以前に人として重要になる、礼儀、目配り、気配りを中学生のうちに身<br>につけられるよう成長して欲しいと考えます。
                             </p>
                         </div>
                         <div class="information__members members">
@@ -194,7 +194,7 @@
                 </div>
             </div>
         </section>
-        <section class="activity section"data-anchor="activity">
+        <section class="activity section fp-auto-height-responsive"data-anchor="activity">
             <div class="activity__container">
                 <div class="activity__container--top">
                     <img src="./public/img/common/ttl_activity.svg" alt="">
@@ -287,7 +287,7 @@
                 </div>
             </div>
         </section>
-        <section class="pictures section"  data-anchor="pictures">
+        <section class="pictures section fp-auto-height-responsive"  data-anchor="pictures">
             <div class="pictures__container">
                     <img src="./public/img/common/Rectangle 77.png" class="images" alt="">
                     <img src="./public/img/common/Rectangle 78.png" class="images" alt="">
@@ -295,7 +295,7 @@
                     <img src="./public/img/common/Rectangle 80.png" class="images" alt="">
             </div>
         </section>
-        <section class="contact section fp-auto-height"  data-anchor="contact">
+        <section class="contact section fp-auto-height-responsive"  data-anchor="contact">
             <div class="l-wrap">
                 <div class="l-container contact__inner">
                     <div class="contact__top">
@@ -321,7 +321,7 @@
                 </div>
             </div>
         </section>
-        <section class="oceanShiga section fp-auto-height"  data-anchor="oceanShiga">
+        <section class="oceanShiga section fp-auto-height fp-auto-height-responsive"  data-anchor="oceanShiga">
             <div class="l-wrap">
                 <div class="l-container oceanShiga__inner">
                     <div class="oceanShiga__top">
@@ -335,7 +335,7 @@
                 </div>
             </div>
         </section>
-        <section class="p-footer section fp-auto-height" data-anchor="p-footer">
+        <section class="p-footer section fp-auto-height fp-auto-height-responsive" data-anchor="p-footer">
             <div class="l-wrap02">
                 <div class="l-container p-footer__inner">
                     <div class="p-footer__left u-d-f">
@@ -412,12 +412,23 @@
                 
             },
             onLeave:(origin,destination,direction)=>{
+                // SECTION 
                 const section = destination.item;
                 const philosophy = document.querySelector('.philosophy');
+                // NAVIGATION
                 const navigation_a = document.querySelectorAll('.l-navigation__links > a');
                 const navigation_links = document.querySelectorAll('.l-navigation__links ');
+                const navigation = document.querySelector('.l-navigation');
+                // NAVIGATION SCROLLS
                 const scrollLine = document.querySelector('.ah');
                 const scroll = document.querySelector('.scroll');
+
+                //NAVIGATION BY ID
+                const nav_top = document.getElementById('nav_top');
+                const nav_news = document.getElementById('nav_news');
+                const nav_info = document.getElementById('nav_info');
+                const nav_activity = document.getElementById('nav_activity');
+                const nav_contact = document.getElementById('nav_contact');
                 
 
 
@@ -430,11 +441,11 @@
                 }
 
                 if(destination.index === 1  || destination.index === 2 || destination.index === 3 ){
-                    navigation_a[0].style.color="#000";
-                    navigation_a[1].style.color="#000";
-                    navigation_a[2].style.color="#000";
-                    navigation_a[3].style.color="#000";
-                    navigation_a[4].style.color="#000";
+                    nav_top.src ="public/img/navigation/nav_btop.png";
+                    nav_news.src ="public/img/navigation/nav_bnews.png";
+                    nav_info.src ="public/img/navigation/nav_binformation.png";
+                    nav_activity.src ="public/img/navigation/nav_bactivity.png";
+                    nav_contact.src ="public/img/navigation/nav_bcontact.png";
 
                     navigation_links[0].style.borderBottom = "2px solid #000";
                     navigation_links[1].style.borderBottom = "2px solid #000";
@@ -445,11 +456,11 @@
                     scroll.style.color="#000";
                     
                 }else{
-                    navigation_a[0].style.color="#FFF";
-                    navigation_a[1].style.color="#FFF";
-                    navigation_a[2].style.color="#FFF";
-                    navigation_a[3].style.color="#FFF";
-                    navigation_a[4].style.color="#FFF";
+                    nav_top.src ="public/img/navigation/nav_wtop.png";
+                    nav_news.src ="public/img/navigation/nav_wnews.png";
+                    nav_info.src ="public/img/navigation/nav_winformation.png";
+                    nav_activity.src ="public/img/navigation/nav_wactivity.png";
+                    nav_contact.src ="public/img/navigation/nav_wcontact.png";
 
                     navigation_links[0].style.borderBottom = "2px solid #FFF";
                     navigation_links[1].style.borderBottom = "2px solid #FFF";
@@ -458,6 +469,18 @@
 
                     scrollLine.style.backgroundColor="#FFF";
                     scroll.style.color="#FFF";
+                }
+
+                if( destination.index === 5 || destination.index === 6 || destination.index === 7){
+                    scrollLine.style.display="none";
+                    scroll.style.display="none";
+                    navigation.style.display="none";
+
+                }else{
+                    scrollLine.style.display="block";
+                    scroll.style.display="inline-block";
+                    navigation.style.display="block";
+
                 }
                 
                 
