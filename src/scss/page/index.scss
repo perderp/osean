@@ -56,6 +56,8 @@
             span{
                 font-size:$font-family;
                 @include font-line(16);
+                margin-top: 18.5px;
+                font-weight: 700;
             }
         }
         &--bottom{
@@ -73,17 +75,8 @@
                 @include is-sp{
                     justify-content: center;
                 }
-                .fab{
-                    color: $colortext-secondary;
-                }
-                p{
-                    align-items: center;
-                    display:block;
-                    margin-left:17px;
-                    font-family: $font-family;
-                    color: $colortext-secondary;
-                    @include font-line(22);
-                    font-weight: 700;
+                .facebook-page{
+                    margin-left: 18px;
                 }
             }
         }
@@ -107,6 +100,8 @@
     &__subtitle{
         p{
             font-family:$font-family;
+            margin-top: 18.5px;
+            font-weight: 700;
             @include is-tablet02{
                 @include font-line(14);
             }
@@ -194,18 +189,20 @@
             span{
                 font-size:$font-family;
                 @include font-line(16);
+                font-weight: 700;
+                margin: 18.5px 0 63px;
             }
         }
         &--bottom{
             .spacing{
                 border-collapse: separate;
-                    border-spacing: 0 1em;
             }
             table{
                 width: 100%;
                 .font2{
                 color: $colortext-secondary;
                 white-space: nowrap;
+                font-weight: 700;
                 @include is-sp{
                     padding-right: 25px;
                 }
@@ -217,6 +214,7 @@
                     color: $colortext-secondary;
                     padding-right: 70px;
                     white-space: nowrap;
+                    font-weight: 700;
                     @include is-sp{
                         padding-right: 40px;
                     }
@@ -229,6 +227,7 @@
                     text-align: right;
                 }
                 .font38{
+                    font-weight: 700;
                     color: $colortext-secondary;
                     padding-right: 50px;
                     white-space: nowrap;
@@ -249,6 +248,7 @@
                     padding-left: 15px;
                 }
                 .padright-95{
+
                     padding-right: 95px;
                     @include is-sp{
                         padding-right: 15px;
@@ -260,12 +260,12 @@
                 td{
                     font-family: $font-family;
                     @include font-line(18);
-                }
-                .letter-space{
-                    letter-spacing: -3px;
-                }
-                .letter-space1{
-                    letter-spacing: -1px;
+                    @include is-sp{
+                        @include font-line(14);
+                    }
+                    @include is-tablet{
+                        @include font-line(16);
+                    }
                 }
             }
         }
