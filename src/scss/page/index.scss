@@ -26,6 +26,7 @@
         text-align:center;
         p{
             color:$colortext01;
+            line-height: 2;
             @include is-tablet{
                 @include font-line(14);
             }
@@ -98,7 +99,9 @@
         }
     }
     &__subtitle{
+        margin-top:18.8px;
         p{
+            font-weight:700;
             font-family:$font-family;
             margin-top: 18.5px;
             font-weight: 700;
@@ -142,6 +145,7 @@
         padding-top:17.6px;
         &__left{
             p{
+                font-weight:700;
                 color:$colortext-secondary;
                 @include is-tablet02{
                     @include font-line(14);
@@ -320,7 +324,9 @@
         // margin-bottom:70.3px;
     }
     &__subtitle{
+        margin-top:18.8px;
         p{
+            font-weight:700;
             font-family:$font-family;
             font-weight: 700;
             margin-top: 18.5px;
@@ -336,6 +342,7 @@
 
     &__number{
         a{
+            line-height: 0;
             @include font-line(47);
             @include is-tablet{
                 @include font-line(30);

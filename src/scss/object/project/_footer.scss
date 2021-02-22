@@ -65,10 +65,6 @@
     }
 
     .navigation{
-        &__ul{
-            justify-content:center;
-        }
-        &__li{}
         &__li:nth-child(1){
             padding-right:18.2px;
         }
@@ -94,6 +90,7 @@
         text-align:center;
         background-color:$colortext-secondary;
         p,a{
+            font-family:$font-family;
             color:$colortext01;
             @include font-line(14);
         }
