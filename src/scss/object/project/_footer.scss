@@ -1,13 +1,14 @@
 .p-footer{
     background-color:#EFEFEF;
     &__inner{
-        padding:70px 0;
+        padding:74px 0 69.5px 0;
         display:flex;
         @include is-tablet02{
             display:block;
         }
         @include is-sp{
             display:block;
+            padding:54.1px 0 54.5px 0;
         }
         p{
             font-family: $font-family;
