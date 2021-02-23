@@ -237,6 +237,9 @@
     background-size: cover;
     height: 100vh;
     &__container{
+        @include is-sp{
+            margin-bottom: 90px;
+        }
         &--top{
             display: flex;
             flex-direction: column;
