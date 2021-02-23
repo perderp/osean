@@ -10,15 +10,31 @@
 ====================================
 ***/
 .hero{
-    background:url(../../../public/img/common/bg_hero.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center bottom;
+
     position:relative;
     height:100vh;
+    &__blur{
+        background:url(../../../public/img/common/bg_hero.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center bottom;
+        position:absolute;
+        z-index:-1;
+        top:0;
+        height: 100vh;
+        width: 100vw;
+        @include is-sp{
+            height:102vh;
+        }
+    }
     &__top{
         text-align:center;
         margin-bottom:170px;
+        z-index:1;
+
+        @include is-sp{
+            margin-bottom:95px;
+        }
     }
     &__bottom{}
 
@@ -27,6 +43,7 @@
         p{
             color:$colortext01;
             line-height: 2;
+            font-weight: 700;
             @include is-tablet{
                 @include font-line(14);
             }
