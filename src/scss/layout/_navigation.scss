@@ -3,6 +3,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include is-tablet {
+        display: none;
+        text-align: start;
+        width: 0;
+        background-color: rgba(0, 0, 0, .9);
+        a {
+            text-decoration: none;
+            display: block;
+            font-weight: 700;
+            font-size: 22px;
+            color: #fff;
+            margin-top: 60px;
+        }
+    }
+    @include is-sp {
+        display: none;
+        text-align: start;
+        width: 0;
+        background-color: rgba(0, 0, 0, .9);
+        a {
+            text-decoration: none;
+            display: block;
+            font-weight: 700;
+            font-size: 22px;
+            color: #fff;
+            margin-top: 60px;
+        }
+    }
     &__links {
         text-align: center;
         padding: 22.7px 0;
@@ -21,7 +49,5 @@
         img{
             vertical-align: inherit;
         }
-
-
     }
 }
