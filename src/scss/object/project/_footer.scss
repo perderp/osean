@@ -65,13 +65,28 @@
     }
 
     .navigation{
+        &__ul{
+            @include is-tablet02{
+                justify-content: center;
+            }
+            @include is-sp{
+                justify-content: center;
+            }
+        }
+        &__li{
+            p{
+                line-height: 1;
+            }
+        }
         &__li:nth-child(1){
             padding-right:18.2px;
         }
         &__li:nth-child(2){
-            border-left:1px solid $colortext-primary;
-            border-right:1px solid $colortext-primary;
-            padding:0 18.4px 0 18.4px;
+            p{
+                border-left:1px solid $colortext-primary;
+                border-right:1px solid $colortext-primary;
+                padding:0 18.4px 0 18.4px;
+            }
         }
         &__li:nth-child(3){
             padding-left:18.2px;
@@ -89,10 +104,10 @@
     .copyright{
         text-align:center;
         background-color:$colortext-secondary;
-        p,a{
-            font-family:$font-family;
-            color:$colortext01;
-            @include font-line(14);
+        img{
+            @include is-sp{
+                width:80vw;
+            }
         }
         padding:18.2px 0 16.2px 0;
     }
