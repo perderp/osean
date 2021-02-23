@@ -34,6 +34,11 @@
         @include is-sp{
             margin-bottom:38.2px;
         }
+        img{
+            &:hover{
+                opacity:0.8;
+            }
+        }
     }
 
     .info{
@@ -76,6 +81,9 @@
         &__li{
             p{
                 line-height: 1;
+                &:hover{
+                    opacity:0.8;
+                }
             }
         }
         &__li:nth-child(1){
@@ -93,6 +101,11 @@
         }
     }
     .shigaLink{
+        p{
+            &:hover{
+                opacity:0.8;
+            }
+        }
         @include is-tablet02{
             text-align: center;
         }

@@ -11,13 +11,20 @@
 ***/
 .hero{
 
+    z-index:0;
     position:relative;
     height:100vh;
+    &__inner{
+        @include is-sp{
+            padding:0;
+        }
+    }
     &__blur{
         background:url(../../../public/img/common/bg_hero.png);
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center bottom;
+        object-fit: cover;
         position:absolute;
         z-index:-1;
         top:0;
@@ -31,12 +38,12 @@
         text-align:center;
         margin-bottom:170px;
         z-index:1;
+        filter:blur(0);
 
         @include is-sp{
             margin-bottom:95px;
         }
     }
-    &__bottom{}
 
     .philosophy{
         text-align:center;
@@ -86,6 +93,11 @@
                 width: 100%;
             }
             .fb-icon{
+                &:hover{
+                    opacity:0.8;
+                }
+            }
+            .fb-icon{
                 margin-top: 25px;
                 display: flex;
                 align-items: center;
@@ -132,6 +144,9 @@
     }
     &__desc{
         margin-bottom:93.5px;
+        p{
+            @include font-line(15.7);
+        }
         @include is-tablet02{
             @include font-line(14);
             margin-bottom:54.4px;
@@ -372,6 +387,9 @@
                 content:url(../../../public/img/common/contact_number.svg);
                 margin-right:12.5px;
             }
+            &:hover{
+                opacity:0.8;
+            }
         }
         margin-bottom:35px;
     }
@@ -388,6 +406,9 @@
             &:before{
                 content:url(../../../public/img/common/contact_mail.svg);
                 margin-right:21.2px;
+            }
+            &:hover{
+                opacity:0.8;
             }
         }
         margin-bottom:48.6px;
@@ -420,6 +441,10 @@
         font-family: $font-family;
         &:after{
             content:url(../../../public/img/common/shiga_click.svg);
+        }
+
+        &:hover{
+            opacity:0.8;
         }
     }
     p,a{

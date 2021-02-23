@@ -79,11 +79,7 @@ new fullpage('#fullpage', {
     scrollingSpeed: 1000,
     fitToSection: true,
     dragAndMove: true,
-    afterRender:()=>{
-        if(window.innerWidth <= 480 ){
-            scrollbar:true
-        }
-    },
+    responsiveWidth:480,
     afterLoad:(origin,destination,direction) =>{
         const philosophy = document.querySelector('.philosophy');
         const hero_blur = document.querySelector('.hero__blur');
@@ -97,7 +93,7 @@ new fullpage('#fullpage', {
             hero_blur.classList.add('blur');
             
         }
-        
+
     },
     onLeave:(origin,destination,direction)=>{
         // SECTION 
@@ -177,20 +173,7 @@ new fullpage('#fullpage', {
         
     },
 });
-if(window.innerWidth <= 480){
-    new fullpage('#fullpage', {
-        autoscrolling: false,
-        scrollbar:true,
-        anchors: ['hero', 'news', 'information', 'activity', 'pictures', 'contact', 'oceanShiga',
-            'p-footer'
-        ],
-        css3: true,
-        scrollingSpeed: 1000,
-        fitToSection: true,
-        dragAndMove: true,
 
-    });
-}
 
 $(window).resize(function () {
     var container_width = $('.fb-frame').width();
