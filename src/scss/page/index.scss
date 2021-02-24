@@ -91,7 +91,10 @@
                 font-weight: 700;
             }
             @include is-sp{
-                padding-top: 100px;
+                padding-top: 96.6px;
+            }
+            @include is-tablet02{
+                padding-top: 96.6px;
             }
         }
         &--bottom{
@@ -249,6 +252,9 @@
         @include is-sp{
             margin-bottom: 90px;
         }
+        @include is-tablet02{
+            margin-bottom: 90px;
+        }
         &--top{
             display: flex;
             flex-direction: column;
@@ -259,6 +265,9 @@
                 @include font-line(16);
                 font-weight: 700;
                 margin: 18.5px 0 63px;
+            }
+            @include is-sp{
+                padding-top: 100px;
             }
             @include is-tablet02{
                 padding-top: 100px;
