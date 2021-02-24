@@ -68,6 +68,62 @@
                 width:16vw;
             }
         }
+        .Modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 20; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow-y: hidden; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding: 0 20px;
+    
+            &-content{
+                background-color:rgba(0, 0, 0, 0.8); 
+                max-width: 800px;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                @include is-sp{
+                    max-width: 380px;
+                }
+                h1{
+                    text-align: center;
+                    color: #fff;    
+                    @include font-line(41);
+                }
+            }
+        
+        }
+        .close{
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 30px 30px 0 0;
+            span{
+                color: #fff;
+                @include font-line(16);
+            }
+            @include is-sp{
+                padding: 20px 20px 0 0;
+            }
+            .mg-r-6{
+                margin-right: 6px;
+            }
+        }
+        .close:hover,
+        .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        
     }
 
     .philosophy{
