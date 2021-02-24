@@ -79,7 +79,7 @@ new fullpage('#fullpage', {
     scrollingSpeed: 1000,
     fitToSection: true,
     dragAndMove: true,
-    responsiveWidth:481,
+    responsiveWidth:641,
     afterLoad:(origin,destination,direction) =>{
         const philosophy = document.querySelector('.philosophy');
         const hero_blur = document.querySelector('.hero__blur');
