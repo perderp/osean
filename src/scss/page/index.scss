@@ -10,7 +10,6 @@
 ====================================
 ***/
 .hero{
-
     z-index:0;
     position:relative;
     height:100vh;
@@ -81,20 +80,27 @@
             background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
             padding: 0 20px;
     
-            &-content{
+            &__content{
                 background-color:rgba(0, 0, 0, 0.8); 
-                max-width: 800px;
-                position: relative;
+                position: absolute;
+                width: 80%;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                @include is-sp{
-                    max-width: 380px;
-                }
+                z-index: 30;
                 h1{
                     text-align: center;
                     color: #fff;    
                     @include font-line(41);
+                }
+                .rotate-90{
+                    transform: rotate(-90deg);
+                }
+                &--bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                 }
             }
         
