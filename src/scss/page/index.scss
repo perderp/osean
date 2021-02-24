@@ -39,15 +39,34 @@
         text-align:center;
         margin-bottom:170px;
         z-index:1;
-        filter:blur(0);
-
+        @include is-tablet02{
+            margin-bottom:95px;
+        }
+        @include is-tablet{
+            margin-bottom:22vw;
+        }
         @include is-sp{
             margin-bottom:95px;
+        }
+        img{
+            @include is-tablet{
+                width:70%;
+            }
         }
     }
     &__bottom{
         @include is-sp{
             padding-bottom:59.2px;
+        }
+    }
+    .nav-hamburger{
+        display:flex;
+        justify-content: flex-end;
+        padding:20px 20px 57.6px 0;
+        img{
+            @include is-sp{
+                width:16vw;
+            }
         }
     }
 
@@ -64,6 +83,12 @@
 
         &__top{
             margin-bottom:45px;
+            @include is-tablet{
+                margin-bottom:24px;
+            }
+            @include is-sp{
+                margin-bottom:24px;
+            }
         }
     }
 }
@@ -93,7 +118,7 @@
             @include is-sp{
                 padding-top: 96.6px;
             }
-            @include is-tablet02{
+        @include is-tablet02{
                 padding-top: 96.6px;
             }
         }
