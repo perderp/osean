@@ -1,7 +1,15 @@
 .p-footer{
     background-color:#EFEFEF;
     &__inner{
-        padding:70px 0;
+        padding:74px 0 69.5px 0;
+        display:flex;
+        @include is-tablet02{
+            display:block;
+        }
+        @include is-sp{
+            display:block;
+            padding:54.1px 0 54.5px 0;
+        }
         p{
             font-family: $font-family;
         }
@@ -9,39 +17,130 @@
     &__left,
     &__right{
         width:calc(100%/2);
+        @include is-tablet02{
+            width:100%;
+        }
+        @include is-sp{
+            width:100%;
+        }
     }
 
     &__left{
         align-items: center;
+        justify-content:center;
+        @include is-tablet{
+            width:40%;
+        }
+
+        @include is-tablet02{
+            margin-bottom:38.2px;
+        }
+        @include is-sp{
+            margin-bottom:38.2px;
+        }
+        img{
+            &:hover{
+                opacity:0.8;
+            }
+        }
+    }
+    &__right{
+        @include is-tablet{
+            width:60%;
+        }
     }
 
     .info{
+        @include is-tablet02{
+            text-align: center;
+        }
+        @include is-sp{
+            text-align: center;
+        }
+
+        &__title{
+            font-weight:700;
+        }
         &__desc{
             // @include font-line(12);
         }
         &__hr{
             background-color:#B7B7AD;
-        }
+            margin:33.1px auto 23.9px auto;
 
+            @include is-tablet02{
+                width:80%;
+            }
+            @include is-sp{
+                width:80%;
+            }
+        }
+        
     }
 
     .navigation{
-        &__ul{}
-        &__li{
-            
-            border-right:1px solid #000;
-            p{
-                // @include font-line(12);
+        &__ul{
+            @include is-tablet02{
+                justify-content: center;
             }
+            @include is-sp{
+                justify-content: center;
+            }
+        }
+        &__li{
+            p{
+                line-height: 1;
+                @include is-tablet{
+                    font-size:2vw;
+                }
+                @include is-sp{
+                    font-size:3.3vw;
+                }
+                &:hover{
+                    opacity:0.8;
+                }
+            }
+        }
+        &__li:nth-child(1){
+            padding-right:18.2px;
+        }
+        &__li:nth-child(2){
+            p{
+                border-left:1px solid $colortext-primary;
+                border-right:1px solid $colortext-primary;
+                padding:0 18.4px 0 18.4px;
+            }
+        }
+        &__li:nth-child(3){
+            padding-left:18.2px;
+        }
+    }
+    .shigaLink{
+        p{
+            &:hover{
+                opacity:0.8;
+            }
+        }
+        @include is-tablet02{
+            text-align: center;
+        }
+        @include is-sp{
+            text-align: center;
+            font-size:4.4vw;
         }
     }
 
     .copyright{
         text-align:center;
         background-color:$colortext-secondary;
-        p,a{
-            color:$colortext01;
-            @include font-line(14);
+        img{
+            width: 500px;
+            @include is-tablet{
+                width:80%;
+            }
+            @include is-sp{
+                width:90%;
+            }
         }
         padding:18.2px 0 16.2px 0;
     }
