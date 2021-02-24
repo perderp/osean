@@ -519,10 +519,6 @@
                 font-size:9vw;
             }
             font-weight:700;
-            // &:before{
-            //     content:url(../../../public/img/common/contact_number.svg);
-            //     margin-right:12.5px;
-            // }
             &:hover{
                 opacity:0.8;
             }
@@ -544,10 +540,6 @@
                 @include font-line(16);
             }
             font-weight:700;
-            // &:before{
-            //     content:url(../../../public/img/common/contact_mail.svg);
-            //     margin-right:21.2px;
-            // }
             &:hover{
                 opacity:0.8;
             }
