@@ -61,18 +61,9 @@
     margin-left: 7.3vw;
     padding: 10px 5px 97vh;
     overflow: hidden;
-    font-size: 14px;
-    font-weight: 700;
-    font-style: italic;
-    line-height: 1;
-    letter-spacing: .2em;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-    &--white {
-        color: #fff;
-    }
-    &--black {
-        color: #000;
+    img{
+        height: 100%;
+        width:100%;
     }
 }
 
@@ -117,6 +108,7 @@
         height: 97vh;
         background: #fff;
         animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+        
     
         @keyframes sdl {
             0% {
