@@ -134,8 +134,12 @@
         text-align:center;
         background-color:$colortext-secondary;
         img{
+            width: 500px;
+            @include is-tablet{
+                width:80%;
+            }
             @include is-sp{
-                width:80vw;
+                width:90%;
             }
         }
         padding:18.2px 0 16.2px 0;

@@ -107,7 +107,7 @@ new fullpage('#fullpage', {
         // NAVIGATION SCROLLS
         const scrollLine = document.querySelector('.ah');
         const scroll = document.querySelector('.scroll');
-
+        const scrollName = document.getElementById('nav_scroll');
         //NAVIGATION BY ID
         const nav_top = document.getElementById('nav_top');
         const nav_news = document.getElementById('nav_news');
@@ -139,7 +139,7 @@ new fullpage('#fullpage', {
             navigation_links[3].style.borderBottom = "2px solid #000";
 
             scrollLine.style.backgroundColor="#000";
-            scroll.style.color="#000";
+            scrollName.src="public/img/navigation/nav_bscroll.png";
             
         }else{
             nav_top.src ="public/img/navigation/nav_wtop.png";
@@ -154,7 +154,7 @@ new fullpage('#fullpage', {
             navigation_links[3].style.borderBottom = "2px solid #FFF";
 
             scrollLine.style.backgroundColor="#FFF";
-            scroll.style.color="#FFF";
+            scrollName.src="public/img/navigation/nav_wscroll.png";
         }
 
         if( destination.index === 5 || destination.index === 6 || destination.index === 7){
