@@ -93,6 +93,9 @@
             @include is-sp{
                 padding-top: 100px;
             }
+            @include is-tablet02{
+                padding-top: 100px;
+            }
         }
         &--bottom{
             max-width: 530px;
@@ -252,6 +255,9 @@
                 margin: 18.5px 0 63px;
             }
             @include is-sp{
+                padding-top: 100px;
+            }
+            @include is-tablet02{
                 padding-top: 100px;
             }
         }
