@@ -172,6 +172,14 @@ cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    @include is-tablet02{
+        background-image: url(../../../public/img/common/bg_activity.png);
+        background-position-x: 60%;
+    }
+    @include is-sp{
+        background-image: url(../../../public/img/common/bg_activity.png);
+        background-position-x: 60%;
+    }
     &__container{
         &--top{
             display: flex;
