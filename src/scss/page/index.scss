@@ -610,6 +610,9 @@ cursor: pointer;
     }
     p,a{
         color:$colortext01;
+        @include is-sp{
+            font-size:3.5vw;
+        }
     }
 }
 
