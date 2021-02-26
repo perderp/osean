@@ -29,6 +29,12 @@
     }
 }
 
+@mixin is-tablet03{
+    @media only screen and (max-width:$breakpoint-tablet) and (min-width: $breakpoint-table02 + 1){
+        @content;
+    }
+}
+
 @mixin is-sp {
     @media only screen and (max-width: $breakpoint-sp ){
         @content;

@@ -114,6 +114,8 @@ new fullpage('#fullpage', {
         const nav_info = document.getElementById('nav_info');
         const nav_activity = document.getElementById('nav_activity');
         const nav_contact = document.getElementById('nav_contact');
+
+        const back_top = document.getElementById('back_top');
         
 
 
@@ -141,6 +143,8 @@ new fullpage('#fullpage', {
             scrollLine.style.backgroundColor="#000";
             scrollName.src="public/img/navigation/nav_bscroll.png";
             
+
+            back_top.src ="public/img/navigation/back_btop.svg";
         }else{
             nav_top.src ="public/img/navigation/nav_wtop.png";
             nav_news.src ="public/img/navigation/nav_wnews.png";
@@ -155,6 +159,12 @@ new fullpage('#fullpage', {
 
             scrollLine.style.backgroundColor="#FFF";
             scrollName.src="public/img/navigation/nav_wscroll.png";
+
+            back_top.src ="public/img/navigation/back_wtop.svg";
+        }
+
+        if(destination.index == 5 || destination.index === 7){
+            back_top.src ="public/img/navigation/back_btop.svg";
         }
 
         if( destination.index === 5 || destination.index === 6 || destination.index === 7){
@@ -168,6 +178,8 @@ new fullpage('#fullpage', {
             navigation.style.display="block";
 
         }
+
+
 
         
         

@@ -51,7 +51,7 @@
                 margin-bottom: 40px;
                 img{
                     padding-bottom: 10px;
-                    height: 8vw;
+                    height: 40px;
                 }
             }
         }
@@ -94,7 +94,19 @@ text-decoration: none;
 cursor: pointer;
 }
 
+.backtop{
+    position: fixed;
+    z-index:2;
+    bottom:80px;
+    right: 0;
+    transform:rotate(90deg);
+    img{
+        width:101px;
+        height: 50px;
+    }
+}
 .hero{
+    overflow: hidden;
     z-index:0;
     position:relative;
     height:100vh;
@@ -105,6 +117,8 @@ cursor: pointer;
         }
     }
     &__blur{
+        overflow: hidden;
+        transform:scale(1.1);
         background:url(../../../public/img/common/bg_hero.png);
         background-size:cover;
         background-repeat: no-repeat;
@@ -326,6 +340,12 @@ cursor: pointer;
         p{font-family: $font-family;}
         &__left{
             margin-right:53px;
+            @include is-tablet02{
+                margin-right:0px;
+            }
+            @include is-sp{
+                margin-right:0px;
+            }
         }
 
     }
@@ -346,7 +366,7 @@ cursor: pointer;
                     @include font-line(14);
                 }
             }
-            width:88px;
+            width:68px;
         }
         &__right{
             p{
@@ -631,6 +651,12 @@ cursor: pointer;
     }
     &__top{
         margin-bottom:42.7px;
+        @include is-tablet02{
+            margin-bottom:15px;
+        }
+        @include is-sp{
+            margin-bottom:15px;
+        }
     }
     .shiga{
         font-family: $font-family;
