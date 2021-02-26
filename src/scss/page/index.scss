@@ -431,28 +431,30 @@ cursor: pointer;
                 color: $colortext-secondary;
                 white-space: nowrap;
                 font-weight: 700;
-                @include is-sp{
-                    padding-right: 25px;
-                }
+                width: 16%;
                 @include is-tablet{
                     padding-right: 15px;
+                }
+                @include is-sp{
+                    width: 20%;
                 }
                 }
                 .font25{
                     color: $colortext-secondary;
-                    padding-right: 70px;
                     white-space: nowrap;
                     font-weight: 700;
-                    @include is-sp{
-                        padding-right: 40px;
-                    }
+                    width: 16%;
                     @include is-tablet{
-                        padding-right: 35px;
+                        padding-right: 15x;
+                    }
+                    @include is-sp{
+                        width: 20%;
                     }
                     
                 }
                 .txt-right{
                     text-align: right;
+                    white-space: nowrap;
                 }
                 .font38{
                     font-weight: 700;
@@ -494,14 +496,24 @@ cursor: pointer;
             .tbl3{
                 display: flex;
                 .left{
+                    width: 20%;
+                    padding-right: 15px;
+                    @include is-pc{
+                        width: 16%;
+                    }
+                    @include is-tablet03{
+                        width: 16%;
+                    }
+                    @include is-sp{
+                        width: 30%;
+                    }
                     p{
                         white-space: nowrap;
-                        margin-right: 55px;
                         font-family: $font-family;
                         color: $colortext-secondary;
                         font-weight: 700;
-                        @include is-sp{
-                            margin-right: 35px;
+                        @include is-tablet{
+                            padding-right: 15px;
                         }
                     }
                 }
