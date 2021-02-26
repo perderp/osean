@@ -503,18 +503,23 @@ cursor: pointer;
                     }
                 }
                 .right{
-                    p{
+                    &__li{
                         font-family: $font-family;
                         white-space: pre-line;
-                        span{
-                            color: $colortext-secondary;
-                        }
+
                         @include font-line(17);
                         @include is-sp{
                             @include font-line(14);
                         }
                         @include is-tablet{
                             @include font-line(16);
+                        }
+                        &:before{
+                            content:"○";
+                            color: $colortext-secondary;
+                            display: inline-block;
+                            width: 1em;
+                            margin-left: -1em
                         }
                     }
                 }
@@ -701,5 +706,3 @@ cursor: pointer;
         }
     }
 }
-
-
