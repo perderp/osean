@@ -240,8 +240,8 @@ cursor: pointer;
             }
         }
         &--bottom{
-            max-width: 530px;
-            padding: 0 15px;
+            max-width: 560px;
+            padding: 0 30px;
             margin: 60px auto 0;
             .fb-frame{
                 width: 100%;
@@ -422,9 +422,6 @@ cursor: pointer;
             }
         }
         &--bottom{
-            .spacing{
-                border-collapse: separate;
-            }
             table{
                 width: 100%;
                 .font2{
@@ -459,9 +456,7 @@ cursor: pointer;
                     color: $colortext-secondary;
                     padding-right: 50px;
                     white-space: nowrap;
-                    @include is-sp{
-                        padding-right: 35px;
-                    }
+
                 }
                 .padd30{
                     padding-right: 30px;
@@ -490,6 +485,37 @@ cursor: pointer;
                     }
                     @include is-tablet{
                         @include font-line(16);
+                    }
+                }
+            }
+            .tbl3{
+                display: flex;
+                .left{
+                    p{
+                        white-space: nowrap;
+                        margin-right: 55px;
+                        font-family: $font-family;
+                        color: $colortext-secondary;
+                        font-weight: 700;
+                        @include is-sp{
+                            margin-right: 35px;
+                        }
+                    }
+                }
+                .right{
+                    p{
+                        font-family: $font-family;
+                        white-space: pre-line;
+                        span{
+                            color: $colortext-secondary;
+                        }
+                        @include font-line(17);
+                        @include is-sp{
+                            @include font-line(14);
+                        }
+                        @include is-tablet{
+                            @include font-line(16);
+                        }
                     }
                 }
             }
