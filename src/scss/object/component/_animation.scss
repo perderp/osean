@@ -1,9 +1,9 @@
 .fadeIn{
-    animation : fadeIn 1s linear both;
+    animation : fadeIn 1.5s linear both;
 }
 
 .blur{
-    animation: blur 1s linear both;
+    animation: blur .09s linear forwards;
 }
 
 @keyframes fadeIn{
@@ -22,7 +22,6 @@
         filter:blur(0);
     }
     100%{
-        
         filter:blur(4px);
     }
 }

@@ -82,9 +82,11 @@
         &__ul{
             @include is-tablet02{
                 justify-content: center;
+                margin-bottom:10px;
             }
             @include is-sp{
                 justify-content: center;
+                margin-bottom:10px;
             }
         }
         &__li{

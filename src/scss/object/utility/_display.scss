@@ -24,8 +24,23 @@
         display: none !important;
       }
     }
+    &-tablet02{
+      @include is-tablet02{
+        display: none !important;
+      }
+    }
+    &-tablet03{
+      @include is-tablet03{
+        display: none !important;
+      }
+    }
     &-pc {
       @include is-pc {
+        display: none !important;
+      }
+    }
+    &-pc02 {
+      @include is-pc02 {
         display: none !important;
       }
     }
