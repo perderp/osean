@@ -52,6 +52,9 @@
                 img{
                     padding-bottom: 10px;
                     height: 40px;
+                    @include is-sp{
+                        height: 30px;
+                    }
                 }
             }
         }
@@ -193,7 +196,6 @@ cursor: pointer;
         &__bottom{
             @include is-sp{
                 text-align:justify;
-                font-size: 3.5vw;
             }
             @include is-tablet02{
                 text-align: justify;
