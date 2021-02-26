@@ -52,6 +52,9 @@
                 img{
                     padding-bottom: 10px;
                     height: 40px;
+                    @include is-sp{
+                        height: 30px;
+                    }
                 }
             }
         }
