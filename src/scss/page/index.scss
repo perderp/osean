@@ -25,7 +25,7 @@
     padding: 0 20px;
 
     &__content{
-        background-color:rgba(0, 0, 0, 0.8); 
+        background-color:#00803E; 
         position: absolute;
         width: 80%;
         left: 50%;
@@ -43,11 +43,28 @@
         &--bottom{
             display: flex;
             align-items: center;
-            justify-content: center;
             flex-direction: column;
             .links{
-                padding-bottom: 50px;
+                width: 90%;
+                text-align: center;
+                border-bottom: 1px solid #fff;
+                margin-bottom: 40px;
+                img{
+                    padding-bottom: 10px;
+                    height: 8vw;
+                }
             }
+        }
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 40px;
+        &:after{
+            content:url(../../../public/img/common/shiga_click.svg);
+            padding-left: 10px;
         }
     }
 
@@ -56,9 +73,9 @@
     color: #fff;
     font-weight: bold;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: flex-end;
-    padding: 30px 30px 0 0;
+    padding: 10px 10px 0 0;
     span{
         color: #fff;
         @include font-line(16);
