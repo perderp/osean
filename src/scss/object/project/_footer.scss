@@ -28,6 +28,9 @@
     &__left{
         align-items: center;
         justify-content:center;
+        @include is-pc02{
+            width:40%;
+        }
         @include is-tablet{
             width:40%;
         }
@@ -45,6 +48,9 @@
         }
     }
     &__right{
+        @include is-pc02{
+            width:60%;
+        }
         @include is-tablet{
             width:60%;
         }

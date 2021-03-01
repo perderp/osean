@@ -636,6 +636,9 @@ cursor: pointer;
         justify-content: center;
         img{
             margin-right:12.5px;
+            @include is-sp{
+                height:16px;
+            }
         }
         a{
             @include font-line(25);
