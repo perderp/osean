@@ -62,7 +62,9 @@
             font-weight:700;
         }
         &__desc{
-            // @include font-line(12);
+            &:hover{
+                opacity:0.8;
+            }
         }
         &__hr{
             background-color:#B7B7AD;
