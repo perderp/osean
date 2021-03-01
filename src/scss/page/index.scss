@@ -388,6 +388,8 @@ cursor: pointer;
     }
 }
 
+
+
 /***
 ====================================
     ACTIVITIY SECTION
@@ -424,6 +426,15 @@ cursor: pointer;
             }
         }
         &--bottom{
+            .spacing{
+                border: none;
+                border-collapse: collapse;
+                padding: 0;
+                margin: 0;
+                .font2{
+                    margin-top: -10px;
+                }
+            }
             table{
                 width: 100%;
                 .font2{
