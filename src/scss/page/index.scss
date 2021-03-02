@@ -446,13 +446,38 @@ cursor: pointer;
             }
         }
         &--bottom{
+            .tbl1{
+                display: flex;
+                    .font2{
+                        color: $colortext-secondary;
+                        white-space: nowrap;
+                        font-weight: 700;
+                        width: 16%;
+                        @include is-tablet{
+                            padding-right: 15px;
+                        }
+                        @include is-sp{
+                            width: 20%;
+                        }
+                }
+                .td{
+                    font-family: $font-family;
+                    @include font-line(18);
+                    @include is-sp{
+                        @include font-line(14);
+                    }
+                    @include is-tablet{
+                        @include font-line(16);
+                    }
+                }
+            }
             .spacing{
                 border: none;
                 border-collapse: collapse;
                 padding: 0;
-                margin: 0;
+                margin-top: -5px;
                 .font2{
-                    margin-top: -10px;
+                    line-height: 1px;
                 }
             }
             table{
@@ -591,8 +616,20 @@ cursor: pointer;
         @include is-tablet{
             flex-direction: column;
         }
+        .left{
+            width: 50%;
+            @include is-tablet{
+                width: 100%;
+            }
+        }
+        .right{
+            width: 50%;
+            @include is-tablet{
+                width: 100%;
+            }
+        }
         .images{
-            min-width: 50vw;
+            width: 50vw;
             height: 50vh;
             object-fit: cover;
             @include is-tablet{
