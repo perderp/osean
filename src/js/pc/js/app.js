@@ -116,6 +116,7 @@ new fullpage('#fullpage', {
         const nav_contact = document.getElementById('nav_contact');
 
         const back_top = document.getElementById('back_top');
+        const back_btn = document.getElementById('back_btn');
         
 
 
@@ -129,22 +130,23 @@ new fullpage('#fullpage', {
         }
 
         if(destination.index === 1  || destination.index === 2 || destination.index === 3 ){
+            //NAVIGATION
             nav_top.src ="public/img/navigation/nav_btop.png";
             nav_news.src ="public/img/navigation/nav_bnews.png";
             nav_info.src ="public/img/navigation/nav_binformation.png";
             nav_activity.src ="public/img/navigation/nav_bactivity.png";
             nav_contact.src ="public/img/navigation/nav_bcontact.png";
-
+            // NAVIGATION BORDERS
             navigation_links[0].style.borderBottom = "2px solid #000";
             navigation_links[1].style.borderBottom = "2px solid #000";
             navigation_links[2].style.borderBottom = "2px solid #000";
             navigation_links[3].style.borderBottom = "2px solid #000";
-
+            // SCROLL
             scrollLine.style.backgroundColor="#000";
             scrollName.src="public/img/navigation/nav_bscroll.png";
-            
-
+            // BACK TO TOP
             back_top.src ="public/img/navigation/back_btop.svg";
+            back_btn.src ="public/img/navigation/back_bbtn.svg";
         }else{
             nav_top.src ="public/img/navigation/nav_wtop.png";
             nav_news.src ="public/img/navigation/nav_wnews.png";
@@ -161,10 +163,12 @@ new fullpage('#fullpage', {
             scrollName.src="public/img/navigation/nav_wscroll.png";
 
             back_top.src ="public/img/navigation/back_wtop.svg";
+            back_btn.src ="public/img/navigation/back_wbtn.svg";
         }
 
         if(destination.index == 5 || destination.index === 7){
             back_top.src ="public/img/navigation/back_btop.svg";
+            back_btn.src ="public/img/navigation/back_bbtn.svg";
         }
 
         if( destination.index === 5 || destination.index === 6 || destination.index === 7){
@@ -176,9 +180,7 @@ new fullpage('#fullpage', {
             scrollLine.style.display="block";
             scroll.style.display="inline-block";
             navigation.style.display="block";
-
         }
-
 
 
         
