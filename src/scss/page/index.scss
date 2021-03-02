@@ -287,6 +287,9 @@ cursor: pointer;
 ***/
 .information{
     height:100vh;
+    @include is-sp{
+        height:100%;
+    }
     &__inner{
         @include is-sp{
             margin:88px 0 84px 0;
@@ -414,12 +417,15 @@ cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    @include is-sp{
+        height:100%;
+    }
     &__container{
         @include is-sp{
-            margin-bottom: 90px;
+            padding-bottom: 90px;
         }
         @include is-tablet02{
-            margin-bottom: 90px;
+            padding-bottom: 90px;
         }
         &--top{
             display: flex;
@@ -608,6 +614,9 @@ cursor: pointer;
 ***/
 .contact{
     height: 100vh;
+    @include is-sp{
+        height: 100%;
+    }
     &__inner{
         text-align:center;
     }
@@ -719,12 +728,12 @@ cursor: pointer;
     background-color:$colortext-primary;
     text-align:center;
     &__inner{
-        margin:80.3px 0 84.3px 0;
+        padding:80.3px 0 84.3px 0;
         @include is-tablet02{
-            margin:50.3px 0 34.3px 0;
+            padding:50.3px 0 34.3px 0;
         }
         @include is-sp{
-            margin:50.3px 0 34.3px 0;
+            padding:50.3px 0 34.3px 0;
         }
     }
     &__top{
