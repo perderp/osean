@@ -610,15 +610,24 @@ cursor: pointer;
         @include is-tablet{
             flex-direction: column;
         }
+        @include is-sp{
+            flex-direction: column;
+        }
         .left{
             width: 50%;
             @include is-tablet{
+                width: 100%;
+            }
+            @include is-sp{
                 width: 100%;
             }
         }
         .right{
             width: 50%;
             @include is-tablet{
+                width: 100%;
+            }
+            @include is-sp{
                 width: 100%;
             }
         }
