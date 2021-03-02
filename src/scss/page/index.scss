@@ -696,7 +696,7 @@ cursor: pointer;
     &__number{
         align-items: center;
         justify-content: center;
-                    line-height: 0;
+        line-height: 1;
         img{
             margin-right:12.5px;
         }
@@ -717,7 +717,7 @@ cursor: pointer;
         p{
 
         }
-        margin-bottom:35px;
+        margin-bottom:30px;
     }
     &__mail{
         align-items: center;
